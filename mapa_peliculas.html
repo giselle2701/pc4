@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8aae366f04ec55aaf039170feccc434d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8aae366f04ec55aaf039170feccc434d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8aae366f04ec55aaf039170feccc434d = L.map(
+                "map_8aae366f04ec55aaf039170feccc434d",
+                {
+                    center: [43.6874, -79.4002],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_825f2de3d89fd125c0d388e3f1de5aad = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_825f2de3d89fd125c0d388e3f1de5aad.addTo(map_8aae366f04ec55aaf039170feccc434d);
+        
+    
+            var marker_0c0d7d0e6f06ec9e3fe240a4ef3abddf = L.marker(
+                [40.772, -73.9836],
+                {
+}
+            ).addTo(map_8aae366f04ec55aaf039170feccc434d);
+        
+    
+            var icon_d1e336226465b53ff8418479511d4918 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c49e81ad7bb31df166b9a90bc1ec8349 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_407a424f0943d9d2b8d3ae20572f2832 = $(`<div id="html_407a424f0943d9d2b8d3ae20572f2832" style="width: 100.0%; height: 100.0%;">Película:Black Swan Director:Darren Aronofsky Estreno:2010</div>`)[0];
+                popup_c49e81ad7bb31df166b9a90bc1ec8349.setContent(html_407a424f0943d9d2b8d3ae20572f2832);
+            
+        
+
+        marker_0c0d7d0e6f06ec9e3fe240a4ef3abddf.bindPopup(popup_c49e81ad7bb31df166b9a90bc1ec8349)
+        ;
+
+        
+    
+    
+                marker_0c0d7d0e6f06ec9e3fe240a4ef3abddf.setIcon(icon_d1e336226465b53ff8418479511d4918);
+            
+    
+            var marker_bf89f891a00b147b1e4f7809c0923a57 = L.marker(
+                [45.4215, -122.7915],
+                {
+}
+            ).addTo(map_8aae366f04ec55aaf039170feccc434d);
+        
+    
+            var icon_972c326c02606186c13ddf8cddf98894 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89550de4244a775061aabba58dc47866 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2b182dfc2010daef86b97ca8d2e2578 = $(`<div id="html_f2b182dfc2010daef86b97ca8d2e2578" style="width: 100.0%; height: 100.0%;">Película:Coraline y la puerta secreta Director:Henry Selick Estreno:2009</div>`)[0];
+                popup_89550de4244a775061aabba58dc47866.setContent(html_f2b182dfc2010daef86b97ca8d2e2578);
+            
+        
+
+        marker_bf89f891a00b147b1e4f7809c0923a57.bindPopup(popup_89550de4244a775061aabba58dc47866)
+        ;
+
+        
+    
+    
+                marker_bf89f891a00b147b1e4f7809c0923a57.setIcon(icon_972c326c02606186c13ddf8cddf98894);
+            
+    
+            var marker_a3152a118467a8e3a12a95ea1f534cf7 = L.marker(
+                [51.7042, -0.4042],
+                {
+}
+            ).addTo(map_8aae366f04ec55aaf039170feccc434d);
+        
+    
+            var icon_c6681edc582df8e903391fb40a323c83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3b9c34fcda7862e8fbf3ff2314b4b7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aec8926deca9f39de9e64b6230399a04 = $(`<div id="html_aec8926deca9f39de9e64b6230399a04" style="width: 100.0%; height: 100.0%;">Película:Barbie Director:Greta Gerwig Estreno:2023</div>`)[0];
+                popup_a3b9c34fcda7862e8fbf3ff2314b4b7c.setContent(html_aec8926deca9f39de9e64b6230399a04);
+            
+        
+
+        marker_a3152a118467a8e3a12a95ea1f534cf7.bindPopup(popup_a3b9c34fcda7862e8fbf3ff2314b4b7c)
+        ;
+
+        
+    
+    
+                marker_a3152a118467a8e3a12a95ea1f534cf7.setIcon(icon_c6681edc582df8e903391fb40a323c83);
+            
+    
+            var marker_2ed6da66230986f1f2af19e44fa61767 = L.marker(
+                [37.5478, 126.9691],
+                {
+}
+            ).addTo(map_8aae366f04ec55aaf039170feccc434d);
+        
+    
+            var icon_d69db1b97340dff0bfee0508d6c7afc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5febeb1b330b1e8160794d9fa2d75c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d350e94a89ae4f8cad87f5d9a7e5be39 = $(`<div id="html_d350e94a89ae4f8cad87f5d9a7e5be39" style="width: 100.0%; height: 100.0%;">Película:Parasite Director:Bong Joon-ho Estreno:2019 </div>`)[0];
+                popup_e5febeb1b330b1e8160794d9fa2d75c9.setContent(html_d350e94a89ae4f8cad87f5d9a7e5be39);
+            
+        
+
+        marker_2ed6da66230986f1f2af19e44fa61767.bindPopup(popup_e5febeb1b330b1e8160794d9fa2d75c9)
+        ;
+
+        
+    
+    
+                marker_2ed6da66230986f1f2af19e44fa61767.setIcon(icon_d69db1b97340dff0bfee0508d6c7afc7);
+            
+    
+            var marker_9a58ac2b5c54525f4a2040dfe3c680a3 = L.marker(
+                [43.6874, -79.4002],
+                {
+}
+            ).addTo(map_8aae366f04ec55aaf039170feccc434d);
+        
+    
+            var icon_e6b5bcd9b9c0950e7560f8d26e9cc8d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e435a7b4cc2fd156fd579ceebbe8031 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cb3e383583f6450a42917f97b1d41a3 = $(`<div id="html_2cb3e383583f6450a42917f97b1d41a3" style="width: 100.0%; height: 100.0%;">Película:Chicas Pesadas Director:Mark Waters Estreno:2004</div>`)[0];
+                popup_9e435a7b4cc2fd156fd579ceebbe8031.setContent(html_2cb3e383583f6450a42917f97b1d41a3);
+            
+        
+
+        marker_9a58ac2b5c54525f4a2040dfe3c680a3.bindPopup(popup_9e435a7b4cc2fd156fd579ceebbe8031)
+        ;
+
+        
+    
+    
+                marker_9a58ac2b5c54525f4a2040dfe3c680a3.setIcon(icon_e6b5bcd9b9c0950e7560f8d26e9cc8d4);
+            
+</script>
+</html>
