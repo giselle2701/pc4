@@ -19,7 +19,7 @@
 
 # Este código sirve para acceder una página web en tu navegador que te brinda información sobre Streamlit.
 # Pero se ejecuta en la terminal Python de tu computadora, no en Jupyter Notebook.
-# streamlit hello
+# python -m streamlit hello
 
 # Este comando sirve para ejecutar un script de Python en Streamlit.
 # Pero se ejecuta en la terminal de tu computadora, no en Jupyter Notebook.
@@ -44,7 +44,7 @@ pagina_seleccionada = st.sidebar.selectbox('Selecciona una página', paginas)
 if pagina_seleccionada == 'Inicio':
 
     # La función st.markdown permite centrar y agrandar la letra del título de la web en Streamlit.
-    st.markdown("<h1 style='text-align: center;'>Gis blog</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>gis blog :3</h1>", unsafe_allow_html=True)
 
     # <h1 style='text-align: center;'>Gis blog</h1>: Esto es una cadena de código HTML. 
     # La etiqueta <h1> se utiliza para el encabezado principal de una página web, y 
@@ -68,7 +68,7 @@ if pagina_seleccionada == 'Inicio':
     # Las columnas creadas se asignan a las variables col1 y col2.
 
     # En la primera columna colocamos la imagen de perfil
-    col1.image("pfp.jpg", caption='Giselle Rhoddo', width=300)
+    col1.image("pfp.jpeg", caption='Giselle Rhoddo :D', width=300)
 
     # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
     # La función image toma como primer argumento el nombre del archivo de la imagen que se desea mostrar. 
@@ -111,11 +111,7 @@ elif  pagina_seleccionada == 'Experiencia':
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?, 
-    ¿Qué te ha enseñado la programación?, 
-    ¿Qué te gusta de programar?, 
-    ¿Qué te gustaría hacer con la programación en el futuro? 
+    Mi experiencia aprendiendo a programar, fue que al principio me sentía confundida, todo era nuevo y la sintaxis me parecía un idioma extraño. Pero poco a poco, con los primeros logros como hacer que aparezca un “Hola mundo” en pantalla o entender cómo funcionan los bucles, empecé a sentirme más motivada. También pasé por momentos de frustración, sobre todo cuando no entendía los errores o algo no salía como esperaba, pero con el tiempo aprendí a tener paciencia y a buscar soluciones. Al empezar a hacer pequeños proyectos, sentí entusiasmo al ver que podía crear cosas por mi cuenta. Ahora me siento más segura y soy capaz de investigar por mi cuenta, leer documentación y resolver problemas, lo que me ha dado más confianza para seguir aprendiendo sola. 
     """
 
     # Mostramos el texto
@@ -131,7 +127,7 @@ elif  pagina_seleccionada == 'Experiencia':
     # En este caso, {texto_2} se reemplaza por el valor de la variable texto.
 
     # Agregamos un subtítulo para el video
-    st.markdown("<h2 style='text-align: center;'>Aquí escribe un nombre creativo para presentar tu video</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Video realizado en Phyton</h2>", unsafe_allow_html=True)
     
     # <h2 style='text-align: center;'>Aquí escribe un nombre creativo para presentar tu video</h2>: Esta es una cadena de código HTML.
     # La etiqueta <h2> se utiliza para un encabezado de segundo nivel en una página web.
@@ -144,7 +140,7 @@ elif  pagina_seleccionada == 'Experiencia':
     # Por ejemplo, puedes agregar un emoji de video 🎥 
 
     # Agregamos un video realizado en las practicas anteriores
-    st.video("https://drive.google.com/file/d/1-p_6eT-5swB89-tv3EmG7h7Cu21Uy4TJ/view?usp=drive_link ")
+    st.video("https://youtu.be/iQmTG875yfM")
 
     # st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E"): Esta línea está mostrando un video en la aplicación web.
     # La función video toma como primer argumento la URL del video que se desea mostrar.
@@ -152,7 +148,7 @@ elif  pagina_seleccionada == 'Experiencia':
     # Puedes cambiar la URL por la de tu video en YouTube o en otra plataforma de video.
 
     # O creamos un botón para ir al enlace del video con button
-    st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>", unsafe_allow_html=True) 
+    st.markdown(f"<div style='text-align: center;'><a href='", unsafe_allow_html=True) 
 
     # <div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>:
     # Esta es una cadena de código HTML.
@@ -189,15 +185,15 @@ else:
 
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Gráfico pastel':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("graficopastel.png", caption='Gráfico de lenguas aisladas', width=500)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico de pastel representa visualmente la proporción entre películas y series en la plataforma de Netflix. Cada sector del círculo corresponde a una categoría de contenido, y su tamaño refleja su frecuencia relativa. Esta visualización es útil para observar rápidamente cuál de los dos formatos predomina en el catálogo, ofreciendo un panorama general del enfoque de la plataforma respecto a sus producciones.</div>", unsafe_allow_html=True)
+        st.image("graficopastel.png", caption='Distribución por el tipo de contenido', width=500)
         pass
     elif grafico_seleccionado == 'Gráfico nubes de palabras':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("nubedepalabras.png", caption='Gráfico de familias lingüísticas', width=500)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Un gráfico de nubes de palabras (o word cloud) se basa en representar visualmente las palabras más frecuentes dentro de un conjunto de textos, que en este caso son, descripciones, transcripciones o hashtags extraídos de videos de TikTok. Las palabras que aparecen con mayor frecuencia se muestran en un tamaño de fuente más grande, lo que permite identificar rápidamente los términos más recurrentes y, por lo tanto, los temas o emociones predominantes. En el contexto de este análisis, una nube de palabras puede ayudar a visualizar qué recursos emocionales (como “feliz”, “miedo” o “esperanza”) son más utilizados en los contenidos del sector salud dirigidos a la audiencia joven durante la campaña de vacunación contra la COVID-19.</div>", unsafe_allow_html=True)
+        st.image("nubedepalabras.png", caption='Gráfico de emociones y estrategias en tiktoks de vacunación', width=500)
         pass
     elif grafico_seleccionado == 'Mapa de películas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El mapa interactivo muestra la ubicación geográfica de los lugares donde fueron grabadas distintas películas, marcando cada punto con un marcador personalizado. Cada marcador incluye una etiqueta (popup) con información relevante: el nombre de la película, el director y el año de estreno, permitiendo al usuario explorar la distribución espacial de las locaciones cinematográficas. Este tipo de visualización permite observar patrones geográficos, como la concentración de rodajes en determinadas ciudades o países, y proporciona una manera clara y atractiva de conectar el cine con su contexto territorial. </div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
         import streamlit.components.v1 as components
         with open("mapa_peliculas.html", "r", encoding="utf-8") as f:
@@ -233,4 +229,3 @@ else:
 
         # Mostrar el mapa en Streamlit
         #st_folium(mapa_cusco, width=700, height=500)
-    
